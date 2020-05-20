@@ -1,0 +1,68 @@
+.header {
+  width: 100%;
+  border: 10px solid @color-additional;
+  border-radius: 5px;
+  position: relative;
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+  &__section-title {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: fade(@color-light, 50%);
+  }
+  &__title {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: @color-light;
+  }
+  &__author {
+    width: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover img {
+      opacity: 1;
+    }
+    &__image {
+      float: left;
+      padding-right: 10px;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: .75;
+      }
+    }
+    span {
+      display: block;
+    }
+    &__section-name {
+      font-size: 14px;
+      color: fade(@color-light, 50%);
+    }
+    &__name {
+      font-size: 16px;
+      color: @color-light;
+    }
+  }
+}

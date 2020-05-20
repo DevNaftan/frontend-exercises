@@ -1,0 +1,11 @@
+extend modules/html/template.pug
+block content
+  section
+    h2 #{titles[0]}
+    ul.section__menu--vertical
+      include modules/html/menu.pug
+  article
+    h2 #{titles[1]}
+    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio mollitia maxime perspiciatis incidunt recusandae perferendis facere laborum unde fugit. Saepe dolor facilis molestiae! Quis qui at labore fugiat accusamus.
+    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ab quo autem nihil totam perferendis voluptate voluptatem culpa fugiat obcaecati? Ab, nemo earum inventore ipsum sunt dolorum perspiciatis voluptatum officia!
+    a(href='#').button #{buttons[1]}

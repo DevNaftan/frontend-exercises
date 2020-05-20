@@ -1,0 +1,226 @@
+/*
+Fonts
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Roboto+Slab:400,700|Roboto:400,400i,700,700i&display=swap');
+
+/*
+Blogs styles
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+figure {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+main {
+  margin-bottom: 15px;
+}
+footer {
+  border-top: #47cfac solid 30px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23282d;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  box-sizing: initial;
+}
+
+.general-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.top-header {
+  background-color: #47cfac;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.social-container {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.social-container span {
+  color: white;
+}
+.social-container span:hover {
+  color: whitesmoke;
+}
+.bottom-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 220px;
+}
+.about-me {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+}
+.about-me:hover {
+  color: darkgrey;
+  border-bottom: 1px solid darkgrey;
+}
+.news-container {
+  background-color: #e6e9ed;
+  margin-bottom: 25px;
+}
+.news {
+  display: grid;
+  grid-template: auto 1fr / 1.5fr 1fr ;
+  padding: 10px 0;
+  width: auto;
+}
+.news h1 {
+  font-family: 'Roboto Mono', monospace;
+  grid-column: 1 / -1;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.news-img {
+  grid-column: 1 / 2;
+}
+.news-details {
+  grid-column: 2 / 3;
+  margin-left: 40px;
+}
+.news-img img {
+  width: 100%;
+}
+.news-details h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 28px;
+}
+.news-details p {
+  font-size: 16px;
+  padding: 15px 0 20px 0;
+}
+.blogs-button {
+  font-family: 'Roboto Mono', monospace;
+  border: 1px solid #47cfac;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: black;
+}
+.blogposts-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.blogposts h1 {
+  font-family: 'Roboto Mono', monospace;
+  grid-column: 1 / -1;
+  font-size: 20px;
+  text-align: center;
+}
+.blogposts-list {
+  border-top: 2px solid #f7f8f9;
+  margin-top: 15px;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blogposts-item {
+  padding: 15px;
+  width: 250px;
+}
+.blogpost-img img {
+  width: 100%;
+}
+.blogposts-item h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.blogposts-item p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .news-details {
+    margin-left: 20px;
+  }
+  .blogposts-list {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  footer {
+    font-size: 10px;
+    text-align: center;
+  }
+  .general-container {
+    flex-direction: inherit;
+  }
+  .top-header {
+    justify-content: center;
+  }
+  .bottom-header {
+    height: 100px;
+    flex-direction: column;
+  }
+  .logo {
+    margin: 15px 0 0 0;
+  }
+  .about-me {
+    margin: 0 0 15px 0;
+  }
+  .news {
+    display: grid;
+    grid-template: auto 1fr auto / 1fr ;
+  }
+  .news h1 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align: center;
+    margin: 10px 0 15px 0;
+  }
+  .news-img {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+  .news-details {
+    margin: 25px 0 25px 0;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+  .blogposts-list {
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .blogposts-item {
+    width: 100%;
+  }
+}

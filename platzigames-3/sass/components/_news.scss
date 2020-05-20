@@ -1,0 +1,25 @@
+.news {
+  width: 50%;
+  min-height: 100%;
+  padding: 50px 0 50px 100px;
+  background-color: $color-primary;
+  &__item {
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid $color-additional;
+    strong {
+      color: $color-additional;
+      @include style-font($font-1);
+    }
+    h2 {
+      margin: 2.5px 0 10px 0;
+      font-weight: bold;
+      color: $color-light;
+      @include style-font($font-1);
+    }
+    p {
+      color: $color-light;
+      @include font-height(16px);
+    }
+  }
+}

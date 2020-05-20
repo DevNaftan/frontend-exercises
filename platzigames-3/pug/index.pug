@@ -1,0 +1,31 @@
+extend template.pug
+block content
+  main
+    section.profile
+      .profile__info
+        figure
+          img(src="../assets/images/avatar.jpg", alt="Avatar")
+        h2 john wick
+        h3 asesino legendario
+        a(href="#") seguir
+      .statistics--profile
+        +statistics('12k', 'seguidores')
+        +statistics('1,7k', 'siguiendo')
+        +statistics('40', 'artículos')
+      .profile__about
+        h2 acerca de mí
+        h3 asesino a sueldo, retirado y amante de los perros
+      .location--profile
+        i.icofont-location-pin
+        strong estados unidos
+        span a 227km de tu ubicación
+      .gallery--profile
+        h2 mis fotos
+        +gallery(gallery_images[0])
+        +gallery(gallery_images[1])
+        +gallery(gallery_images[2])
+        +gallery(gallery_images[3])
+    section.news
+      +news(news_plataform[0],news_titles[0],news_descriptions[0])
+      +news(news_plataform[1],news_titles[1],news_descriptions[1])
+      +news(news_plataform[2],news_titles[2],news_descriptions[2])

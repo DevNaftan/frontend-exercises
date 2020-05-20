@@ -1,0 +1,15 @@
+header {
+  display: grid;
+  padding-bottom: 140px;
+  border-radius: 0  0 25px 25px;
+  transition-duration: .3s;
+  will-change: contents;
+  background-color: var(--additional);
+  span {
+    font-weight: bold;
+    opacity: $opacity;
+  }
+}
+header::before {
+  background-color: var(--additional);
+}

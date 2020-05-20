@@ -1,0 +1,13 @@
+@media only screen {
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    .profile {
+      width: 100%;
+    }
+    .news {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+extend _template.pug
+block content
+  main
+    section.searcher
+      form(action=""): input(type="text", name="search", placeholder="Buscar...")
+    section.result
+      .result__header
+        h2 20 resultados para "playstation"
+        .filter
+          span filtrar
+          i.fas.fa-th-large
+          i.fas.fa-th-list
+      .result__content
+        +box(box_sections[0], box_titles[0], box_descriptions[0], box_images[0])
+        +box(box_sections[0], box_titles[1], box_descriptions[1], box_images[1])
+        +box(box_sections[0], box_titles[2], box_descriptions[2], box_images[2])
+        +box(box_sections[1], box_titles[3], box_descriptions[3])
+        +box(box_sections[1], box_titles[4], box_descriptions[4])
+        +box(box_sections[1], box_titles[5], box_descriptions[5])

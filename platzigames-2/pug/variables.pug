@@ -1,0 +1,12 @@
+-var game_titles = ['Conoce las actualizaciones de XBOX GAME PASS','Fortnite une fuerzas con stranger things','Cuphead se atrasa hasta el año 2020']
+-var game_descriptions = ['A una semana de haber terminado el E3, Microsoft anunció la 1era temporada de juegos que llega a Xbox...','Portales hacia el Upside Down han aparecido dentro de Fortnite, y aunque no funcionan igual...','Los miembros de Studio MDHR revelan la razón detrás del atraso de la fecha de lanzamiento...']
+-var game_images = ['../images/xbox.jpg','../images/fortnite.jpg','../images/cuphead.jpg']
+
+mixin box-game(url,title,description)
+  .footer__box-game-container__box-game
+    figure
+      img(src=url, alt=title)
+    .footer__box-game-container__box-game__details
+      h3 #{title}
+      p #{description}
+      a(href="#") Leer más

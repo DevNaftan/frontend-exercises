@@ -1,0 +1,40 @@
+.profile {
+  width: 50%;
+  min-height: 100%;
+  padding: 20px;
+  background-color: $color-secondary;
+  &__info {
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+    img {
+      margin: 0 auto;
+      border-radius: 25%;
+    }
+    h2 {
+      margin-top: 10px;
+      font-weight: bold;
+      color: $color-additional;
+      @include style-font($font-1)
+    }
+    h3 {
+      font-weight: bold;
+      color: getOpacity($color-variation, .6);
+      @include style-font($font-1)
+    }
+    a {
+      display: block;
+      width: 100px;
+      margin: 30px auto 0 auto;
+      padding: 5px 0;
+      border-radius: 15px;
+      text-decoration: none;
+      color: $color-light;
+      background-color: $color-primary;
+      @include style-font($font-1)
+    }
+  }
+  &__about {
+    @extend .profile__info;
+  }
+}

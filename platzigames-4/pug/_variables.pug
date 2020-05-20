@@ -1,0 +1,32 @@
+-var box_sections = ['vídeo','noticias']
+-var box_titles = ['apex legends temporada 2: un nuevo trailer muestra cambios al mapa','vídeo análisis crash team racing nitro fueled','final fantasy xiv recibirá una serie live action en televsión','pes 2020 obtiene acuerdo con el manchester united','cyberpunk 2077: habrá dos juegos más','mortal kombat 11: filtración confirma al joker como dlc']
+-var box_descriptions = ['Dos nuevos tráilers de Apex Legends muestran lo que nos espera en la Temporada 2 del battle royale de Respawn...','Veinte años después del lanzamiento del original, Crash Team Racing ha recibido un remake total que logra mantener todos los...','Final Fantasy XIV Online recibirá una adaptación a TV de parte de Square Enix con Sony Pictures Television y Hivemind...','Konami ha anunciado que han formado un acuerdo con el club de fútbol inglés Manchester United para ser incluido en el juego...','Es estudio polaco de videojuegos CD Projekt está trabajando no en uno, sino en tres juegos ubicados en el universo RPG de Cyberpunk...','Usuarios han investigado el más reciente parche de la versión para PC de Mortal Kombat 11 donde se incluyen datos de Joker, Terminator,...']
+-var box_images = ['apex.jpg','crash.jpg','ff.jpg']
+
+mixin box(section, title, description, image)
+  .box
+    if(image)
+      figure
+        img(src="../assets/images/"+image, alt=title)
+    .box__details
+      strong #{section}
+      h3 #{title}
+      p #{description}
+      a(href="#") ver más
+    .statistics--box
+      +statistic
+
+mixin statistic
+  ul
+    li
+      a(href="#")
+        i.fas.fa-share
+        span 275
+    li
+      a(href="#")
+        i.fas.fa-eye
+        span 523
+    li
+      a(href="#")
+        i.fas.fa-comments
+        span 12

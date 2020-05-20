@@ -1,0 +1,139 @@
+/*
+Fonts
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Slab', serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Roboto+Slab:400,700|Roboto:400,400i,700,700i&display=swap');
+
+/*
+Home styles
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+figure {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+main {
+  height: 100%;
+  background-image: url("../assets/images/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 1fr ;
+  justify-items: center;
+}
+
+.top-header {
+  background-color: #47cfac;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.social-container {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding-right: 25px;
+}
+.social-container span {
+  color: white;
+}
+.social-container span:hover {
+  color: whitesmoke;
+}
+.bottom-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-left: 50px;
+}
+.logo img {
+  width: 220px;
+}
+.about-me {
+  text-decoration: none;
+  margin-right: 50px;
+  color: black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+}
+.about-me:hover {
+  color: darkgrey;
+  border-bottom: 1px solid darkgrey;
+}
+.main-text {
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  align-self: center;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 8px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0 10px;
+}
+.main-button {
+  background-color: #47cfac;
+  padding: 10px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  outline: none;
+  color: black;
+}
+.main-button:hover {
+  background-color: #61f2f5;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .top-header {
+    justify-content: center;
+  }
+  .bottom-header {
+    height: 100px;
+    flex-direction: column;
+  }
+  .logo {
+    margin: 10px 0 0 0;
+  }
+  .about-me {
+    margin: 0 0 10px 0;
+  }
+  .main-text {
+    letter-spacing: 4px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-text {
+    font-size: 10px;
+  }
+}

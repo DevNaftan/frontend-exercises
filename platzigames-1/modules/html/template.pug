@@ -1,0 +1,10 @@
+include config.pug
+<!DOCTYPE html>
+html(lang="es")
+  include head.pug
+  body
+    .web-container
+      include header.pug
+      main
+        block content
+      include footer.pug

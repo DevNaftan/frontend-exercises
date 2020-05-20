@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v31/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvgUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v31/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+}
+article {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+figure {
+  display: flex;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  border: 10px solid #8a40df;
+  border-radius: 5px;
+  position: relative;
+}
+.header__image img {
+  width: 100%;
+}
+.header__section-title {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header__title {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.header__author {
+  width: 150px;
+  margin: 0 auto;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header__author:hover img {
+  opacity: 1;
+}
+.header__author__image {
+  float: left;
+  padding-right: 10px;
+}
+.header__author__image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+.header__author span {
+  display: block;
+}
+.header__author__section-name {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header__author__name {
+  font-size: 16px;
+  color: white;
+}
+.content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+.content h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+.content p {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+.content p + p {
+  margin-bottom: 35px;
+}
+.content strong {
+  text-transform: uppercase;
+  color: #8a40df;
+}
+.footer {
+  width: 100%;
+}
+.footer h2 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  color: #8a40df;
+}
+.footer .footer__box-game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer .footer__box-game-container__box-game {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #8841db;
+  color: white;
+}
+.footer .footer__box-game-container__box-game figure img {
+  width: 100%;
+}
+.footer .footer__box-game-container__box-game .footer__box-game-container__box-game__details {
+  padding: 20px;
+}
+.footer .footer__box-game-container__box-game .footer__box-game-container__box-game__details h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 26px;
+}
+.footer .footer__box-game-container__box-game .footer__box-game-container__box-game__details p {
+  margin: 10px 0 20px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+.footer .footer__box-game-container__box-game .footer__box-game-container__box-game__details a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.footer .footer__box-game-container__box-game .footer__box-game-container__box-game__details a:hover {
+  color: #c8c8c8;
+}
+@media only screen and (max-width: 768px) {
+  .header__title {
+    font-size: 35px;
+  }
+  .footer h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header__section-title {
+    font-size: 12px;
+    top: 18%;
+  }
+  .header__title {
+    top: 28%;
+    font-size: 20px;
+  }
+  .header__author {
+    width: 100px;
+    top: 75%;
+  }
+  .header__author__image img {
+    width: 30px;
+    height: 30px;
+  }
+  .header__author__section-name {
+    font-size: 8px;
+  }
+  .header__author__name {
+    font-size: 10px;
+  }
+  .footer h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header__title {
+    top: 30%;
+    font-size: 16px;
+  }
+  .header__author__image img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header__title {
+    font-size: 14px;
+  }
+  .header__author__section-name {
+    font-size: 6px;
+  }
+  .header__author__name {
+    font-size: 8px;
+  }
+}

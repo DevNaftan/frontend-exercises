@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
+$font-1: 'Oswald', sans-serif;
+$font-2:'Lato', sans-serif;
+
+$color-primary: #333333;
+$color-secondary: #f1f1f1;
+$color-additional: #804bb9;
+$color-variation: #3d5698;
+$color-light: #FFFFFF;
+
+@mixin container {
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  margin: 0 auto 40px auto;
+  border-radius: 25px;
+  color: $color-primary;
+  background-color: $color-light;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.50);
+}
+
+@mixin style-font($font) {
+  @if ($font==$font-1) {
+    font-family: $font-1;
+    text-transform: uppercase;
+  } @else {
+    font-family: $font-2;
+  }
+}
+
+@mixin font-height($font-size) {
+  font-size: $font-size;
+  line-height: $font-size * 1.50;
+}
+
+@function getOpacity($color,$opacity) {
+  @return rgba($color, $opacity);
+}
+
+@each $titles, $size in (h1: 25px, h2: 20px, h3: 15px) {
+  #{$titles} {
+    font-size: $size;
+  }
+}

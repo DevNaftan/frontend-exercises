@@ -1,0 +1,75 @@
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+  .box {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition-duration: .3s;
+    will-change: contents;
+    background-color: var(--secundary);
+    &__header {
+      figure {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+      }
+      .facebook {
+        background-image: url('../assets/svg/facebook.svg');
+      }
+      .twitter {
+        background-image: url('../assets/svg/twitter.svg');
+      }
+      .instagram {
+        background-image: url('../assets/svg/instagram.svg');
+      }
+      .youtube {
+        background-image: url('../assets/svg/youtube.svg');
+      }
+      strong {
+        font-size: 15px;
+        opacity: $opacity;
+      }
+    }
+    &__followers {
+      strong {
+        display: block;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      span {
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        opacity: $opacity;
+      }
+    }
+    .icofont-caret-up {
+      color: $up;
+      span {
+        font-family: $font;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+    .icofont-caret-down {
+      color: $down;
+      span {
+        font-family: $font;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+  .box::before {
+    background-color: var(--secundary);
+  }
+  .box:hover {
+    cursor: pointer;
+    background-color: var(--variation);
+  }
+}

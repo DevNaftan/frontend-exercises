@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
+font-1 = 'Lato', sans-serif
+font-2 = 'Oswald', sans-serif
+color-primary = #333333
+color-secundary = #7547c4
+color-light = #FFFFFF
+
+style-font(font)
+  if(font == font-1)
+    font-family: font-1
+  else
+    font-family: font-2
+    text-transform: uppercase
+
+hover()
+  color: alpha(color-primary, .75)
+
+line-height(font-size)
+  font-size: font-size
+  line-height: font-size * 1.50
+
+for titles in 1 2 3
+  h{titles}
+    font-size: 35px - (5 * titles)

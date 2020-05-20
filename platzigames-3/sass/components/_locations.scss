@@ -1,0 +1,22 @@
+.location--profile {
+  @include container;
+  i {
+    float: left;
+    margin-right: 5px;
+    font-size: 50px;
+    color: $color-variation;
+  }
+  strong {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    @include style-font($font-1);
+  }
+  span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: getOpacity($color-primary, .6);
+    @include style-font($font-1);
+  }
+}

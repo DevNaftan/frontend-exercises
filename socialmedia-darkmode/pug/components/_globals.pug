@@ -1,0 +1,13 @@
+mixin box(socialnetwork_logo, legend, followers, stats, arrow, followers_type)
+  .box(class=socialnetwork_logo)
+    .box__header
+      figure(class=socialnetwork_logo)
+      strong #{legend}
+    .box__followers
+      strong #{followers}
+      if (followers_type)
+        span #{followers_type}
+    if (arrow == 'up')
+      i(class=stats_arrows[0]): span #{stats}
+    else if (arrow == 'down')
+      i(class=stats_arrows[1]): span #{stats}
