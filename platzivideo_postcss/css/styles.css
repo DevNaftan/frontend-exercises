@@ -321,7 +321,7 @@ li:hover a {
 
 
 /*--- MEDIA ---*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .wrapper {
     grid-template: repeat(4, auto) / 1fr;
   }
@@ -353,6 +353,14 @@ li:hover a {
   .content {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
+  }
+  .watching {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .form {
+    max-width: 100%;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){

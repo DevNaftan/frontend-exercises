@@ -275,8 +275,8 @@ li:hover a {
 
 
 /*--- MEDIA ---*/
-@custom-media --mobile only screen and (width < 425px);
-@custom-media --tablet only screen and (width < 768px);
+@custom-media --mobile only screen and (width <= 425px);
+@custom-media --tablet only screen and (width <= 768px);
 @media (--tablet) {
   .wrapper {
     grid-template: repeat(4, auto) / 1fr;
@@ -305,5 +305,13 @@ li:hover a {
   .content {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
+  }
+  .watching {
+    padding: 20px;
+  }
+}
+@media (--mobile) {
+  .form {
+    max-width: 100%;
   }
 }
