@@ -1,0 +1,12 @@
+.filter {
+  padding: 0 0 20px 20px;
+}
+.checkbox:checked ~ .video-list {
+  display: none;
+}
+.button--searcher {
+  width: 10%;
+  border: none;
+  outline: none;
+  background: transparent;
+}

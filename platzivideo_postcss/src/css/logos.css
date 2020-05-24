@@ -1,0 +1,21 @@
+.logo {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  padding: 20px 0;
+  text-align: center;
+  background-color: var(--color-playlist-background);
+  & a {
+    color: white;
+  }
+  & strong {
+    background-image: linear-gradient(to right, #f41720, #e75e94);
+    background-clip: text;
+    /* Soportado actualmente solo por Chrome y Safari*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (--tablet) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+}

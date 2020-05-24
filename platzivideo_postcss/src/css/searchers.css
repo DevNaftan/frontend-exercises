@@ -1,0 +1,25 @@
+.searcher {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-searcher-background);
+  box-shadow: 0px 0px 3px 0px rgba(128,128,128,1);
+  & input {
+    width: 90%;
+    padding: 10px 5px 10px 20px;
+    border: none;
+    outline: none;
+    color: var(--color-darkgray);
+    background-color: transparent;
+  }
+  @media (--tablet) {
+    max-width: calc(100% / 1.5);
+    margin-bottom: 15px;
+  }
+  @media (--mobile) {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+@custom-selector :--filters .name-label, .type-label, .checkbox-label;
+@custom-selector :--hover :hover, :active;
+
+:--filters {
+  display: inline-block;
+  padding: 3px 7px;
+  border: 1px solid color(gray b(50%));
+  border-bottom: 3px solid var(--color-darkgray);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  color: gray(100);
+  &:--hover {
+    background-color: var(--color-darkgray);
+    color: white;
+  }
+}

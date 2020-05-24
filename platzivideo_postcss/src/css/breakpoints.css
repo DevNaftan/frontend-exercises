@@ -1,0 +1,2 @@
+@custom-media --mobile only screen and (width <= 425px);
+@custom-media --tablet only screen and (width <= 768px);
