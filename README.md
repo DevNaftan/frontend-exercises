@@ -2,13 +2,13 @@
 A compilation of frontend exercises
 
 ### Exercises list
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/blog/)](blog)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/movi.es/)](movi.es)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/platziconf-hawaii_bootstrap/)](platziconf-hawaii_bootstrap)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/platzigames/)](platzigames)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/platzigames_less/)](platzigames_less)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/platzigames_sass/)](platzigames_sass)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/platzigames_stylus/)](platzigames_stylus)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/platzivideo/)](platzivideo)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/platzivideo_jquery/)](platzivideo_jquery)
-- [![N|Solid](https://devnaftan.github.io/frontend-exercises/platzivideo_postcss/)](platzivideo_postcss)
+- [blog](https://devnaftan.github.io/frontend-exercises/blog/)
+- [movi.es](https://devnaftan.github.io/frontend-exercises/movi.es/)
+- [platziconf-hawaii_bootstrap](https://devnaftan.github.io/frontend-exercises/platziconf-hawaii_bootstrap/)
+- [platzigames](https://devnaftan.github.io/frontend-exercises/platzigames/)
+- [platzigames_less](https://devnaftan.github.io/frontend-exercises/platzigames_less/)
+- [platzigames_sass](https://devnaftan.github.io/frontend-exercises/platzigames_sass/)
+- [platzigames_stylus](https://devnaftan.github.io/frontend-exercises/platzigames_stylus/)
+- [platzivideo](https://devnaftan.github.io/frontend-exercises/platzivideo/)
+- [platzivideo_jquery](https://devnaftan.github.io/frontend-exercises/platzivideo_jquery/)
+- [platzivideo_postcss](https://devnaftan.github.io/frontend-exercises/platzivideo_postcss/)
