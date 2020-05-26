@@ -59,7 +59,7 @@ figure {
 .arrow-down {
   width: 15px;
   height: 15px;
-  background-image: url("../images/arrow-down.svg");
+  background-image: url('../images/arrow-down.svg');
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position: center;
@@ -94,25 +94,25 @@ figure {
 .home-img {
   width: 35px;
   height: 35px;
-  background-image: url("../images/home.svg");
+  background-image: url('../images/home.svg');
   background-size: 35px 35px;
 }
 .trending-img {
   width: 35px;
   height: 35px;
-  background-image: url("../images/trending.svg");
+  background-image: url('../images/trending.svg');
   background-size: 35px 35px;
 }
 .likes-img {
   width: 35px;
   height: 35px;
-  background-image: url("../images/likes.svg");
+  background-image: url('../images/likes.svg');
   background-size: 35px 35px;
 }
 .settings-img {
   width: 35px;
   height: 35px;
-  background-image: url("../images/settings.svg");
+  background-image: url('../images/settings.svg');
   background-size: 35px 35px;
 }
 
@@ -201,25 +201,25 @@ figure {
   .home-img {
     width: 20px;
     height: 20px;
-    background-image: url("../images/home.svg");
+    background-image: url('../images/home.svg');
     background-size: 20px 20px;
   }
   .trending-img {
     width: 20px;
     height: 20px;
-    background-image: url("../images/trending.svg");
+    background-image: url('../images/trending.svg');
     background-size: 20px 20px;
   }
   .likes-img {
     width: 20px;
     height: 20px;
-    background-image: url("../images/likes.svg");
+    background-image: url('../images/likes.svg');
     background-size: 20px 20px;
   }
   .settings-img {
     width: 20px;
     height: 20px;
-    background-image: url("../images/settings.svg");
+    background-image: url('../images/settings.svg');
     background-size: 20px 20px;
   }
 }

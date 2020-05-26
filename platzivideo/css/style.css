@@ -160,13 +160,13 @@ figure {
 .share-img {
   width: 25px;
   height: 25px;
-  background: url("../images/share.svg");
+  background: url('../images/share.svg');
   background-size: 25px 25px;
 }
 .save-img {
   width: 25px;
   height: 25px;
-  background: url("../images/save.svg");
+  background: url('../images/save.svg');
   background-size: 25px 25px;
 }
 .video-category-container {

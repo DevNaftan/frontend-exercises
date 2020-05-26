@@ -132,7 +132,7 @@
     $home.classList.add('search-active')
     const $loader = document.createElement('img')
     setAttribute($loader, {
-      src: 'src/images/loader.gif',
+      src: '../images/loader.gif',
       height: 50,
       width: 50
       })  // Llamamos la función enviándole el elemento y los atributos en objeto que se le insertarán

@@ -7,7 +7,7 @@ mixin box(section, title, description, image)
   .box
     if(image)
       figure
-        img(src="../assets/images/"+image, alt=title)
+        img(src="./assets/images/"+image, alt=title)
     .box__details
       strong #{section}
       h3 #{title}

@@ -1,14 +1,14 @@
-extend template.pug
+extend ./template.pug
 block content
   article
     header.header
       figure.header__image
-        img(src="../images/intro.jpg", alt="Imágen del encabezado")
+        img(src="./images/intro.jpg", alt="Imágen del encabezado")
       span.header__section-title noticias
       h1.header__title cyberpunk 2077 tiene tres prólogos distintos
       a(href="#").header__author
         figure.header__author__image
-          img(src="../images/avatar.jpg", alt="Imágen del autor")
+          img(src="./images/avatar.jpg", alt="Imágen del autor")
         span.header__author__section-name autor
         span.header__author__name john wick
     section.content
