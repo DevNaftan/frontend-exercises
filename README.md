@@ -12,3 +12,4 @@ A compilation of frontend exercises
 - [platzivideo](https://devnaftan.github.io/frontend-exercises/platzivideo/)
 - [platzivideo_jquery](https://devnaftan.github.io/frontend-exercises/platzivideo_jquery/)
 - [platzivideo_postcss](https://devnaftan.github.io/frontend-exercises/platzivideo_postcss/)
+- [tattoo-store_foundation](https://devnaftan.github.io/frontend-exercises/tattoo-store_foundation/dist/)
