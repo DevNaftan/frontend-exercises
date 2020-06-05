@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tatto Store</title>
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  <link rel="stylesheet" href="{{root}}assets/fonts/foundation-icons/foundation-icons.css">
+</head>
+<body>
+  <div class="off-canvas-content" data-off-canvas-content>
+    {{> body}}
+  </div>
+  <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+    {{> offcanvas}}
+  </div>
+  <script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>
+
+<!--
+  Características utilizadas
+    - Grid XY (padding, margin)
+    - Clases prototipo (margin, padding, display, text-transform)
+    - Orbit
+    - Nesting
+    - Off-canvas (Off-canvas JS References)
+    - Smooth Navigation
+-->
