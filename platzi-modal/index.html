@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animaciones de Entrada y Saluida</title>
+  <script src="https://kit.fontawesome.com/4894c5e846.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .platzi-website {
+      margin: 0;
+    }
+    .btn {
+      padding: .6em .8em .8em;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: white;
+      opacity: .85;
+      background-color: lightgray;
+      box-shadow: inset 0 -.2em rgba(0,0,0,.2);  /* Sombra interna */
+      transition: .2s;
+      will-change: transform;
+    }
+    .btn:active {
+      transform: scale(.9);
+    }
+    .btn:hover {
+      opacity: 1;
+    }
+    .btn.primary {
+      background-color: #7dc800;
+    }
+    .btn.warning {
+      background-color: #ff463b;
+    }
+    .overlay {
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      background-color: rgba(0, 0, 0, .8);
+      transition: 1.1s ease-in;
+    }
+    .overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .modal {
+      width: 100%;
+      max-width: 500px;
+      padding: 2em;
+      border-radius: .5em;
+      position: absolute;
+      text-align: center;
+      background-color: white;
+    }
+    .fa-times {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      opacity: .75;
+    }
+    .fa-times:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+    @keyframes modalIn {
+      0% {
+        transform: translateY(-100vh);
+      }
+      60% {
+        transform: translateY(25px);
+      }
+      75% {
+        transform: translateY(-10px);
+      }
+      90% {
+        transform: translateY(5px);
+      }
+      /* Si no se declara un estado final (100%) toma el valor inicial del elemento antes de ocurrir la animación */
+    }
+    @keyframes modalOut {
+      0% {
+        transform: translateY(5px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+      75% {
+        transform: translateY(25px);
+      }
+      100% {
+        transform: translateY(-100vh);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay" class="overlay">
+    <div id="modal" class="modal">
+      <i id="closeModal" class="fas fa-times"></i>
+      <h3>Atención!</h3>
+      <p>Estás a punto de crear una ventada modal muy guay | cool | chévere</p>
+      <p>Te gustó?</p>
+      <div class="modal__buttons">
+        <button id="yes" type="button" class="btn primary">Si, está muy chido</button>
+        <button id="no" type="button" class="btn warning">No, :(</button>
+      </div>
+    </div>
+  </div>
+  <figure id="platziWebsite" class="platzi-website">
+    <img src="./images/platzi.png" alt="Platzi">
+  </figure>
+  <script>
+    const $platziWebsite = document.getElementById('platziWebsite')
+    const $closeModal = document.getElementById('closeModal')
+    const $yes = document.getElementById('yes')
+    const $no = document.getElementById('no')
+    const $modal = document.getElementById('modal')
+    const $overlay = document.getElementById('overlay')
+
+    function closeModal() {
+      $modal.style.animation = 'modalOut .8s forwards'
+      $overlay.classList.remove('active')
+    }
+    $platziWebsite.addEventListener('click', event => {
+      $modal.style.animation = 'modalIn .8s forwards'
+      $overlay.classList.add('active')
+    })
+    $overlay.addEventListener('click', event => {
+      if(event.target === $overlay) {
+        closeModal()
+      }
+    })
+    $closeModal.addEventListener('click', () => {
+      closeModal()
+    })
+    $yes.addEventListener('click', () => {
+      closeModal()
+    })
+    $no.addEventListener('click', () => {
+      closeModal()
+    })
+  </script>
+</body>
+</html>
