@@ -9,4 +9,4 @@ A store to buy invisible guitars.
 * React JS
 
 ### Preview
-[![N|Solid](https://repository-images.githubusercontent.com/265662957/b5d62600-c45b-11ea-8a58-503468ff7584)](https://thecovid19tracker.info/)
+[![N|Solid](https://raw.githubusercontent.com/DevNaftan/frontend-exercises/master/invie/src/images/Preview.png)](https://github.com/DevNaftan/frontend-exercises/tree/master/invie)
