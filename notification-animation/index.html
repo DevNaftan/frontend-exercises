@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification animation</title>
+    <script src="https://kit.fontawesome.com/4894c5e846.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/buttons.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 200vh;
+            background-image: url('./assets/images/platzi.png');
+            background-size: 100%;
+        }
+        .header {
+            display: flex;
+            height: 52px;
+            padding-right: 200px;
+            justify-content: flex-end;
+            background-color: #1d3644;
+        }
+        .notification {
+            display: flex;
+            width: 50px;
+            height: inherit;
+            position: relative;
+            justify-content: center;
+            align-items: center;  /* Tambien se puede alinear line-hight con el mismo alto del contenedor */
+            color: white;
+        }
+        .bell {
+            transform-origin: center top;
+        }
+        .bell.add {
+            animation: bell .85s ease-out;
+        }
+        .notification::after {
+            content: attr(data-count);  /**/
+            display: flex;
+            min-width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            background-color: #ff4600;
+            opacity: 0;
+            transition: .3s;
+            transform: scale(.5);
+        }
+        .notification.show-count::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+        @keyframes bell {
+            0% {
+                transform: rotate(0);
+            }
+            12.5% {
+                transform: rotate(35deg);
+            }
+            25% {
+                transform: rotate(-30deg);
+            }
+            37.5% {
+                transform: rotate(25deg);
+            }
+            50% {
+                transform: rotate(-20deg);
+            }
+            62.5% {
+                transform: rotate(15deg);
+            }
+            75% {
+                transform: rotate(-5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <button type="button" id="btn" class="btn primary">Enviar notificación</button>
+            <div id="notification" class="notification" data-count="">
+                <i id="bell" class="fas fa-bell bell"></i>
+            </div>
+        </header>
+    </main>
+    <script>
+        const $btn = document.getElementById('btn')
+        const $notification = document.getElementById('notification')
+        const $bell = document.getElementById('bell')
+        function removeAnimation(event) {
+            $bell.classList.remove('add')
+        }
+        function notification() {
+            const count = Number($notification.getAttribute('data-count')) || 0  /* Si está indefinido cerá cero */
+            $notification.setAttribute('data-count', count + 1)
+            $notification.classList.add('show-count')
+            $bell.classList.add('add')
+            $bell.addEventListener('animationend', removeAnimation)
+        }
+
+        $btn.addEventListener('click', notification)
+    </script>
+</body>
+</html>

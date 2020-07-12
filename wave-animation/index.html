@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            height: 500px;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            background-color: #0f9bf6;
+            overflow: hidden;
+        }
+        .content {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 2em;  /* Se multiplica al tamaño de los hijos */
+            color: rgba(255,255,255,.8);
+        }
+        .waves {
+            width: 100%;
+            height: 427px;
+            position: absolute;
+            bottom: calc(-427px / 3);
+        }
+        .wave {
+            width: 2500vw;
+            height: 427px;
+            position: absolute;
+            bottom: 0;
+            left: -200px;
+            background: url('./assets/images/waves_sprite.webp') center bottom no-repeat;
+            animation: wave 5s ease-in-out infinite alternate;
+        }
+        .wave.a {
+            background-position: 0 -854px;
+        }
+        .wave.b {
+            background-position: 0 -427px;
+            animation-delay: .6s;
+        }
+        .wave.c {
+            background-position: 0 0;
+            animation-delay: 1.2s;
+        }
+        @keyframes wave {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(-80px, 30px);
+            }
+            100% {
+                transform: translate(160px, -60px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Hola mundo!</h1>
+            <p>Estoy en el curso de animaciones para la web!</p>
+        </div>
+        <div class="waves">
+            <div class="wave a"></div>
+            <div class="wave b"></div>
+            <div class="wave c"></div>
+        </div>
+    </div>
+</body>
+</html>
